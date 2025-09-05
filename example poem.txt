@@ -1,0 +1,40 @@
+# Example Poem Title
+@ yuri_text
+% images/bg/poem_special.jpg {"xsize":200}
+& audio/special_theme.ogg
+! true
+{"font":"mod_assets/STUFF/PlayFairDisplay.ttf", "size":30, "color":"#336699", "outlines":[(2, "#fff", 0, 0)]}
+
+This is the body of the poem.
+This poem is an example of one that uses all the properties available.
+These properties are defined at the top using the following special characters for parsing:
+- `#`: Title
+- `@`: Style
+- `%`: Paper background, if the image path is follow by braces, it will use the properties inside in a transform
+- `&`: Music
+- `!`: Separate the title from the text (true or false)
+A dictionary (a set of values encased by braces) can also be provided to give other properties
+The special characters must include a space after them or they will not be read.
+You can remove some of these lines to use the defaults instead.
+The special properties will not be saved over translations, so please include them if they are in the original.
+If you want to use none of the special properties, make the first line blank and write the poem starting from the second line.
+
+The author is set by the first letter of the filename:
+- `s`: Sayori  
+- `m`: Monika  
+- `n`: Natsuki  
+- `y`: Yuri  
+- `p`: MC  
+- Any other letter or no letter: Generic author
+
+For example, a file named `y_example.txt` will be assigned to Yuri, while `poem1.txt` will use the generic author.
+
+You can call a poem by calling the show_poem function with the string identifier matching the name of the file passed in (without extension), example using this file below:
+- show_poem("example poem")
+
+These must be text files with the `.txt` extension or they won't be read.
+
+That is all for instructions.
+Enjoy customizing your poems!
+
+P.S. I made this purely because Ren'Py can't translate the poems correctly and it's better off if those are text files, these will be translated correctly unlike our old method.
