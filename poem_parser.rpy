@@ -25,8 +25,6 @@ init python:
 
         start with a blank line to separate properties from text
         """
-
-        body = ""
         with open(f"{renpy.config.gamedir}/{file}", encoding="utf-8") as f:
                     lines = f.readlines()
                     author = author_generic # if you don't have this default, change it None before your game breaks
