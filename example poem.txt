@@ -27,7 +27,7 @@ The author is set by the first letter of the filename:
 - `p`: MC  
 - Any other letter or no letter: Generic author
 
-For example, a file named `y_example.txt` will be assigned to Yuri, while `poem1.txt` will use the generic author.
+For example, a file named `y_example.txt` will be assigned to Yuri, while `random_poem1.txt` will use the generic author.
 
 You can call a poem by calling the show_poem function with the string identifier matching the name of the file passed in (without extension), example using this file below:
 - show_poem("example poem")
